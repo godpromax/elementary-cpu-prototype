@@ -1,0 +1,305 @@
+Simulator report for test
+Tue Jan 04 17:39:41 2022
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 143 nodes    ;
+; Simulation Coverage         ;      96.50 % ;
+; Total Number of Transitions ; 401          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Vector input source                                                                        ; test.vwf   ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      96.50 % ;
+; Total nodes checked                                 ; 143          ;
+; Total output ports checked                          ; 143          ;
+; Total output ports with complete 1/0-value coverage ; 138          ;
+; Total output ports with no 1/0-value coverage       ; 1            ;
+; Total output ports with no 1-value coverage         ; 5            ;
+; Total output ports with no 0-value coverage         ; 1            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-------------------------------------------------------+
+; Complete 1/0-Value Coverage                           ;
++-----------------+------------------+------------------+
+; Node Name       ; Output Port Name ; Output Port Type ;
++-----------------+------------------+------------------+
+; |test|MOVB~0    ; |test|MOVB~0     ; out              ;
+; |test|MOVA~0    ; |test|MOVA~0     ; out              ;
+; |test|RSL~0     ; |test|RSL~0      ; out              ;
+; |test|JC~0      ; |test|JC~0       ; out              ;
+; |test|JZ~0      ; |test|JZ~0       ; out              ;
+; |test|JC~1      ; |test|JC~1       ; out              ;
+; |test|HALT~0    ; |test|HALT~0     ; out              ;
+; |test|NOP~0     ; |test|NOP~0      ; out              ;
+; |test|HALT~1    ; |test|HALT~1     ; out              ;
+; |test|OUT~0     ; |test|OUT~0      ; out              ;
+; |test|NOP~1     ; |test|NOP~1      ; out              ;
+; |test|HALT~2    ; |test|HALT~2     ; out              ;
+; |test|JMP~0     ; |test|JMP~0      ; out              ;
+; |test|JZ~1      ; |test|JZ~1       ; out              ;
+; |test|JC~2      ; |test|JC~2       ; out              ;
+; |test|IN~0      ; |test|IN~0       ; out              ;
+; |test|OUT~1     ; |test|OUT~1      ; out              ;
+; |test|NOP~2     ; |test|NOP~2      ; out              ;
+; |test|HALT~3    ; |test|HALT~3     ; out              ;
+; |test|RSR~0     ; |test|RSR~0      ; out              ;
+; |test|RSL~1     ; |test|RSL~1      ; out              ;
+; |test|JMP~1     ; |test|JMP~1      ; out              ;
+; |test|JZ~2      ; |test|JZ~2       ; out              ;
+; |test|JC~3      ; |test|JC~3       ; out              ;
+; |test|IN~1      ; |test|IN~1       ; out              ;
+; |test|OUT~2     ; |test|OUT~2      ; out              ;
+; |test|NOP~3     ; |test|NOP~3      ; out              ;
+; |test|HALT~4    ; |test|HALT~4     ; out              ;
+; |test|RSR~1     ; |test|RSR~1      ; out              ;
+; |test|RSL~2     ; |test|RSL~2      ; out              ;
+; |test|JMP~2     ; |test|JMP~2      ; out              ;
+; |test|JZ~3      ; |test|JZ~3       ; out              ;
+; |test|JC~4      ; |test|JC~4       ; out              ;
+; |test|IN~2      ; |test|IN~2       ; out              ;
+; |test|OUT~3     ; |test|OUT~3      ; out              ;
+; |test|NOP~4     ; |test|NOP~4      ; out              ;
+; |test|HALT~5    ; |test|HALT~5     ; out              ;
+; |test|NOT~0     ; |test|NOT~0      ; out              ;
+; |test|RSR~2     ; |test|RSR~2      ; out              ;
+; |test|RSL~3     ; |test|RSL~3      ; out              ;
+; |test|JMP~3     ; |test|JMP~3      ; out              ;
+; |test|JZ~4      ; |test|JZ~4       ; out              ;
+; |test|JC~5      ; |test|JC~5       ; out              ;
+; |test|IN~3      ; |test|IN~3       ; out              ;
+; |test|OUT~4     ; |test|OUT~4      ; out              ;
+; |test|NOP~5     ; |test|NOP~5      ; out              ;
+; |test|HALT~6    ; |test|HALT~6     ; out              ;
+; |test|AND~0     ; |test|AND~0      ; out              ;
+; |test|NOT~1     ; |test|NOT~1      ; out              ;
+; |test|RSR~3     ; |test|RSR~3      ; out              ;
+; |test|RSL~4     ; |test|RSL~4      ; out              ;
+; |test|JMP~4     ; |test|JMP~4      ; out              ;
+; |test|JZ~5      ; |test|JZ~5       ; out              ;
+; |test|JC~6      ; |test|JC~6       ; out              ;
+; |test|IN~4      ; |test|IN~4       ; out              ;
+; |test|OUT~5     ; |test|OUT~5      ; out              ;
+; |test|NOP~6     ; |test|NOP~6      ; out              ;
+; |test|HALT~7    ; |test|HALT~7     ; out              ;
+; |test|SUB~0     ; |test|SUB~0      ; out              ;
+; |test|AND~1     ; |test|AND~1      ; out              ;
+; |test|NOT~2     ; |test|NOT~2      ; out              ;
+; |test|RSR~4     ; |test|RSR~4      ; out              ;
+; |test|RSL~5     ; |test|RSL~5      ; out              ;
+; |test|JMP~5     ; |test|JMP~5      ; out              ;
+; |test|JZ~6      ; |test|JZ~6       ; out              ;
+; |test|JC~7      ; |test|JC~7       ; out              ;
+; |test|IN~5      ; |test|IN~5       ; out              ;
+; |test|OUT~6     ; |test|OUT~6      ; out              ;
+; |test|NOP~7     ; |test|NOP~7      ; out              ;
+; |test|HALT~8    ; |test|HALT~8     ; out              ;
+; |test|MOVC~0    ; |test|MOVC~0     ; out              ;
+; |test|MOVB~1    ; |test|MOVB~1     ; out              ;
+; |test|ADD~0     ; |test|ADD~0      ; out              ;
+; |test|SUB~1     ; |test|SUB~1      ; out              ;
+; |test|AND~2     ; |test|AND~2      ; out              ;
+; |test|NOT~3     ; |test|NOT~3      ; out              ;
+; |test|RSR~5     ; |test|RSR~5      ; out              ;
+; |test|RSL~6     ; |test|RSL~6      ; out              ;
+; |test|JMP~6     ; |test|JMP~6      ; out              ;
+; |test|JZ~7      ; |test|JZ~7       ; out              ;
+; |test|JC~8      ; |test|JC~8       ; out              ;
+; |test|IN~6      ; |test|IN~6       ; out              ;
+; |test|OUT~7     ; |test|OUT~7      ; out              ;
+; |test|NOP~8     ; |test|NOP~8      ; out              ;
+; |test|HALT~9    ; |test|HALT~9     ; out              ;
+; |test|MOVC~1    ; |test|MOVC~1     ; out              ;
+; |test|MOVB~2    ; |test|MOVB~2     ; out              ;
+; |test|ADD~1     ; |test|ADD~1      ; out              ;
+; |test|SUB~2     ; |test|SUB~2      ; out              ;
+; |test|AND~3     ; |test|AND~3      ; out              ;
+; |test|NOT~4     ; |test|NOT~4      ; out              ;
+; |test|RSR~6     ; |test|RSR~6      ; out              ;
+; |test|RSL~7     ; |test|RSL~7      ; out              ;
+; |test|JMP~7     ; |test|JMP~7      ; out              ;
+; |test|JZ~8      ; |test|JZ~8       ; out              ;
+; |test|JC~9      ; |test|JC~9       ; out              ;
+; |test|IN~7      ; |test|IN~7       ; out              ;
+; |test|OUT~8     ; |test|OUT~8      ; out              ;
+; |test|NOP~9     ; |test|NOP~9      ; out              ;
+; |test|HALT~10   ; |test|HALT~10    ; out              ;
+; |test|IR[0]     ; |test|IR[0]      ; out              ;
+; |test|IR[1]     ; |test|IR[1]      ; out              ;
+; |test|IR[2]     ; |test|IR[2]      ; out              ;
+; |test|IR[3]     ; |test|IR[3]      ; out              ;
+; |test|IR[4]     ; |test|IR[4]      ; out              ;
+; |test|IR[5]     ; |test|IR[5]      ; out              ;
+; |test|IR[6]     ; |test|IR[6]      ; out              ;
+; |test|IR[7]     ; |test|IR[7]      ; out              ;
+; |test|MOVB      ; |test|MOVB       ; pin_out          ;
+; |test|MOVC      ; |test|MOVC       ; pin_out          ;
+; |test|ADD       ; |test|ADD        ; pin_out          ;
+; |test|SUB       ; |test|SUB        ; pin_out          ;
+; |test|AND       ; |test|AND        ; pin_out          ;
+; |test|NOT       ; |test|NOT        ; pin_out          ;
+; |test|RSR       ; |test|RSR        ; pin_out          ;
+; |test|RSL       ; |test|RSL        ; pin_out          ;
+; |test|JMP       ; |test|JMP        ; pin_out          ;
+; |test|JZ        ; |test|JZ         ; pin_out          ;
+; |test|JC        ; |test|JC         ; pin_out          ;
+; |test|IN        ; |test|IN         ; pin_out          ;
+; |test|OUT       ; |test|OUT        ; pin_out          ;
+; |test|NOP       ; |test|NOP        ; pin_out          ;
+; |test|HALT      ; |test|HALT       ; pin_out          ;
+; |test|Equal1~0  ; |test|Equal1~0   ; out0             ;
+; |test|Equal2~0  ; |test|Equal2~0   ; out0             ;
+; |test|Equal3~0  ; |test|Equal3~0   ; out0             ;
+; |test|Equal4~0  ; |test|Equal4~0   ; out0             ;
+; |test|Equal5~0  ; |test|Equal5~0   ; out0             ;
+; |test|Equal6~0  ; |test|Equal6~0   ; out0             ;
+; |test|Equal7~0  ; |test|Equal7~0   ; out0             ;
+; |test|Equal8~0  ; |test|Equal8~0   ; out0             ;
+; |test|Equal9~0  ; |test|Equal9~0   ; out0             ;
+; |test|Equal10~0 ; |test|Equal10~0  ; out0             ;
+; |test|Equal11~0 ; |test|Equal11~0  ; out0             ;
+; |test|Equal12~0 ; |test|Equal12~0  ; out0             ;
+; |test|Equal13~0 ; |test|Equal13~0  ; out0             ;
+; |test|Equal14~0 ; |test|Equal14~0  ; out0             ;
+; |test|Equal15~0 ; |test|Equal15~0  ; out0             ;
++-----------------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------+
+; Missing 1-Value Coverage                             ;
++----------------+------------------+------------------+
+; Node Name      ; Output Port Name ; Output Port Type ;
++----------------+------------------+------------------+
+; |test|MOVA~1   ; |test|MOVA~1     ; out              ;
+; |test|MOVA~2   ; |test|MOVA~2     ; out              ;
+; |test|EN       ; |test|EN         ; out              ;
+; |test|MOVA     ; |test|MOVA       ; pin_out          ;
+; |test|Equal0~0 ; |test|Equal0~0   ; out0             ;
++----------------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++-------------------------------------------------+
+; Missing 0-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+; |test|EN  ; |test|EN         ; out              ;
++-----------+------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Tue Jan 04 17:39:41 2022
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off test -c test
+Info: Using vector source file "C:/Users/nike winner/Desktop/test/ÒëÂëÆ÷/test.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      96.50 %
+Info: Number of transitions in simulation is 401
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 156 megabytes
+    Info: Processing ended: Tue Jan 04 17:39:41 2022
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

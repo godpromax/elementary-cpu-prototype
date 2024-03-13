@@ -1,0 +1,6 @@
+|SM
+clk => z~reg0.CLK
+EN => z~reg0.ENA
+z <= z~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

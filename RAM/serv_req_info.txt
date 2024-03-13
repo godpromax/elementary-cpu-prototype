@@ -1,0 +1,43 @@
+<internal_error>
+	<executable>quartus.exe</executable>
+	<sub_system>unknown</sub_system>
+	<file>unknown</file>
+	<line>0</line>
+	<callstack>
+	0x03510a41: RESR_TMW + 0x20a41 (??1TMW_WND@@UAE@XZ + 0x4b1)
+	0x5248c0b4: mfc90 + 0x5c0b4
+	0x754ea14d: USER32 + 0x3a14d (GetClassLongW + 0x5cd)
+	0x754ea57e: USER32 + 0x3a57e (GetClassLongW + 0x9fe)
+	0x7524bb21: KERNEL32 + 0x1bb21 (FindAtomW + 0x121)
+	0x5248ba48: mfc90 + 0x5ba48
+	0x5248a63c: mfc90 + 0x5a63c
+	0x5248a8c8: mfc90 + 0x5a8c8
+	0x524885b2: mfc90 + 0x585b2
+	0x754f339a: USER32 + 0x4339a (AddClipboardFormatListener + 0x4a)
+	0x754ea339: USER32 + 0x3a339 (GetClassLongW + 0x7b9)
+	0x754e8099: USER32 + 0x38099 (DispatchMessageW + 0x249)
+	0x754d6d64: USER32 + 0x26d64 (DialogBoxIndirectParamAorW + 0x274)
+	0x754d6c03: USER32 + 0x26c03 (DialogBoxIndirectParamAorW + 0x113)
+	0x7553430a: USER32 + 0x8430a (SoftModalMessageBox + 0x72a)
+	0x755330a0: USER32 + 0x830a0 (DrawStateA + 0x1420)
+	0x75533b66: USER32 + 0x83b66 (MessageBoxTimeoutW + 0x196)
+	0x7553399d: USER32 + 0x8399d (MessageBoxTimeoutA + 0xad)
+	0x755336b4: USER32 + 0x836b4 (MessageBoxA + 0x44)
+	0x5248fdda: mfc90 + 0x5fdda
+	0x524ccc9e: mfc90 + 0x9cc9e
+	0x524ccb72: mfc90 + 0x9cb72
+	0x03440e80: RESR_MSW + 0x10e80 (?prompt_display@MSW_DISPLAY@@UAIHPAVMSG_PROMPT@@@Z + 0xf0)
+	0x728d70d2: COMCTL32 + 0x370d2 (_TrackMouseEvent + 0x15132)
+	0x728d70e3: COMCTL32 + 0x370e3 (_TrackMouseEvent + 0x15143)
+	0x028fd7a1: CCL_MSG + 0xd7a1 (?is_msg_enabled@MSG_REPORT@@UAI_NPAVMSG_BASE@@@Z + 0x11)
+	0x028f1c3f: CCL_MSG + 0x1c3f (?prompt@MSG_REPORT@@UAIHPAVMSG_PROMPT@@@Z + 0xf)
+	0x0291ce89: CCL_MSG + 0x2ce89 (?prompt@MSG_O@@UAI?AW4MSG_VALUE@MSG_PROMPT@@PAVMSG_REPORT@@@Z + 0x29)
+	</callstack>
+	<error>Current editor: RPW, GED, MED</error>
+	<date>Mon Dec 20 11:43:36 2021</date>
+	<version>Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition</version>
+	<full_error>Access Violation at 0X03510A41
+Current editor: RPW, GED, MED
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition </full_error>
+</internal_error>
+

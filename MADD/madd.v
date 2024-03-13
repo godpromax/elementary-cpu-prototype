@@ -1,0 +1,23 @@
+module madd (
+    input [7:0] a, b, c,
+    input [1:0] MADD,
+    output reg [7:0] y
+);
+	
+	
+    always @(a, b, c, MADD) begin
+    
+		y = 8'b0;
+		
+        if (MADD == 2'b00) begin
+            y = a;
+        end
+        else if (MADD == 2'b01) begin
+            y = b;
+        end
+        else if (MADD == 2'b10) begin
+            y = c;
+        end
+    end
+
+endmodule

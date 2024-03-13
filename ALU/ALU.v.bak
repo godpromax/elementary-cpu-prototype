@@ -1,0 +1,52 @@
+module ALU(M,s,S,D,T,Cf,Zf);
+
+input M;
+input [3:0]s;
+input [7:0]S,D;
+output [7:0]T;
+output Cf, Zf;
+
+reg [7:0]T;
+reg Cf,Zf;
+
+always@(M,s,S,D)
+begin
+	T = 8'h00;
+	Zf = 1'b0;
+	if(M==1'b1)
+	begin
+		if(s==4'b1001)
+		begin 
+			{Cf,T} = S+D;
+			if(Cf==1'b0&&T==8'h00)
+				begin Zf = 1'b1; end
+		end
+		else if(s==4'b0110)
+		begin
+			{Cf,T} = S-D;
+			if(Cf==1'b0&&T==8'h00)
+				begin Zf = 1'b1; end
+		end
+		else if(s==4'b1011)
+		begin
+			{Cf,T} = S&D;
+			if(Cf==1'b0&&T==8'h00)
+				begin Zf = 1'b1; end
+		end
+		else if(s==4'b0101)
+		begin 
+			T = ~S;
+			Cf = 1'b0;
+			if(T==8'h00)
+				begin Zf = 1'b1; end
+		end
+		else if(s==4'b1010||s==4'b0100)
+			begin T = S; end
+	end
+	else
+	begin
+		if(s==4'b1100)
+			begin T = D; end
+	end
+end
+endmodule

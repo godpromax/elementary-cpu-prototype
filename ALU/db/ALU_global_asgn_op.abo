@@ -1,0 +1,4373 @@
+Version:
+	9.0 Build 184 04/29/2009 SP 1 SJ Web Edition
+
+Chip Device Options:
+	Device Name:	EP2S15F484C3
+	Device JTAG code:	ffffffff
+	Programming_mode:	Passive Serial
+	NWS_NRS_NCS:	UNRESERVED
+	RDYNBUSY:	UNRESERVED
+	DATA 7 to 1:	UNRESERVED
+	nCEO:	UNRESERVED
+	UNUSED PINS:	RESERVED_GND
+	Default IO Standard::	3.3-V LVTTL
+	User Start-up Clock:	0
+	Auto Restart on Error:	1
+	Release Clears Before Tristates:	0
+	Device Clear:	0
+	Test And Scan:	0
+	Device OE:	0
+	Enable Lock Output:	0
+	Enable Init Done:	0
+	Enable JTAG BST:	0
+	Enable Vref A:	0
+	Enable Vref B:	0
+
+
+
+****************************
+******Individual Atoms******
+****************************
+
+- ATOM ------------------------
+	ATOM_NAME: Add1~1 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 0
+	Atom Type: stratixii_lcell_comb (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: [DATAC]	~ S[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	~ D[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: [CIN]	  GND	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		8: [SHAREIN]	  GND	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Add1~0	LIT INDEX 0 FANOUTS 0
+		1: [SUMOUT]	Add1~1	LIT INDEX 0 FANOUTS 2
+		2: [COUT]	Add1~2	LIT INDEX 0 FANOUTS 1
+		3: [SHAREOUT]	Add1~3	LIT INDEX 0 FANOUTS 1
+
+	PARAMETER LIST:
+		shared_arith                   = on
+		extended_lut                   = off
+		lut_mask                       = 0000FF0F00000FF0
+
+
+- ATOM ------------------------
+	ATOM_NAME: Add0~1 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 1
+	Atom Type: stratixii_lcell_comb (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: [DATAD]	~ D[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+		5: [DATAF]	~ S[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		6: NO ITERM
+		7: [CIN]	  GND	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Add0~0	LIT INDEX 0 FANOUTS 0
+		1: [SUMOUT]	Add0~1	LIT INDEX 0 FANOUTS 2
+		2: [COUT]	Add0~2	LIT INDEX 0 FANOUTS 1
+		3: [SHAREOUT]	Add0~3	LIT INDEX 0 FANOUTS 0
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 0000FF00000000FF
+
+
+- ATOM ------------------------
+	ATOM_NAME: Add1~5 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 2
+	Atom Type: stratixii_lcell_comb (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: [DATAC]	~ S[1]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	~ D[1]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: [CIN]	  Add1~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		8: [SHAREIN]	  Add1~3	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Add1~4	LIT INDEX 0 FANOUTS 0
+		1: [SUMOUT]	Add1~5	LIT INDEX 0 FANOUTS 2
+		2: [COUT]	Add1~6	LIT INDEX 0 FANOUTS 1
+		3: [SHAREOUT]	Add1~7	LIT INDEX 0 FANOUTS 1
+
+	PARAMETER LIST:
+		shared_arith                   = on
+		extended_lut                   = off
+		lut_mask                       = 00000F000000F00F
+
+
+- ATOM ------------------------
+	ATOM_NAME: Add0~5 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 3
+	Atom Type: stratixii_lcell_comb (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: [DATAD]	~ D[1]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+		5: [DATAF]	~ S[1]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		6: NO ITERM
+		7: [CIN]	  Add0~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Add0~4	LIT INDEX 0 FANOUTS 0
+		1: [SUMOUT]	Add0~5	LIT INDEX 0 FANOUTS 2
+		2: [COUT]	Add0~6	LIT INDEX 0 FANOUTS 1
+		3: [SHAREOUT]	Add0~7	LIT INDEX 0 FANOUTS 0
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 0000FF00000000FF
+
+
+- ATOM ------------------------
+	ATOM_NAME: Add1~9 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 4
+	Atom Type: stratixii_lcell_comb (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: [DATAC]	~ S[2]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	~ D[2]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: [CIN]	  Add1~6	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		8: [SHAREIN]	  Add1~7	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Add1~8	LIT INDEX 0 FANOUTS 0
+		1: [SUMOUT]	Add1~9	LIT INDEX 0 FANOUTS 2
+		2: [COUT]	Add1~10	LIT INDEX 0 FANOUTS 1
+		3: [SHAREOUT]	Add1~11	LIT INDEX 0 FANOUTS 1
+
+	PARAMETER LIST:
+		shared_arith                   = on
+		extended_lut                   = off
+		lut_mask                       = 00000F000000F00F
+
+
+- ATOM ------------------------
+	ATOM_NAME: Add0~9 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 5
+	Atom Type: stratixii_lcell_comb (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: [DATAD]	~ D[2]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+		5: [DATAF]	~ S[2]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		6: NO ITERM
+		7: [CIN]	  Add0~6	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Add0~8	LIT INDEX 0 FANOUTS 0
+		1: [SUMOUT]	Add0~9	LIT INDEX 0 FANOUTS 2
+		2: [COUT]	Add0~10	LIT INDEX 0 FANOUTS 1
+		3: [SHAREOUT]	Add0~11	LIT INDEX 0 FANOUTS 0
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 0000FF00000000FF
+
+
+- ATOM ------------------------
+	ATOM_NAME: Add1~13 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 6
+	Atom Type: stratixii_lcell_comb (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: [DATAC]	~ S[3]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	~ D[3]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: [CIN]	  Add1~10	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		8: [SHAREIN]	  Add1~11	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Add1~12	LIT INDEX 0 FANOUTS 0
+		1: [SUMOUT]	Add1~13	LIT INDEX 0 FANOUTS 2
+		2: [COUT]	Add1~14	LIT INDEX 0 FANOUTS 1
+		3: [SHAREOUT]	Add1~15	LIT INDEX 0 FANOUTS 1
+
+	PARAMETER LIST:
+		shared_arith                   = on
+		extended_lut                   = off
+		lut_mask                       = 00000F000000F00F
+
+
+- ATOM ------------------------
+	ATOM_NAME: Add0~13 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 7
+	Atom Type: stratixii_lcell_comb (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: [DATAD]	~ D[3]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+		5: [DATAF]	~ S[3]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		6: NO ITERM
+		7: [CIN]	  Add0~10	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Add0~12	LIT INDEX 0 FANOUTS 0
+		1: [SUMOUT]	Add0~13	LIT INDEX 0 FANOUTS 2
+		2: [COUT]	Add0~14	LIT INDEX 0 FANOUTS 1
+		3: [SHAREOUT]	Add0~15	LIT INDEX 0 FANOUTS 0
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 0000FF00000000FF
+
+
+- ATOM ------------------------
+	ATOM_NAME: Add1~17 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 8
+	Atom Type: stratixii_lcell_comb (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: [DATAC]	~ S[4]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	~ D[4]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: [CIN]	  Add1~14	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		8: [SHAREIN]	  Add1~15	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Add1~16	LIT INDEX 0 FANOUTS 0
+		1: [SUMOUT]	Add1~17	LIT INDEX 0 FANOUTS 2
+		2: [COUT]	Add1~18	LIT INDEX 0 FANOUTS 1
+		3: [SHAREOUT]	Add1~19	LIT INDEX 0 FANOUTS 1
+
+	PARAMETER LIST:
+		shared_arith                   = on
+		extended_lut                   = off
+		lut_mask                       = 00000F000000F00F
+
+
+- ATOM ------------------------
+	ATOM_NAME: Add0~17 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 9
+	Atom Type: stratixii_lcell_comb (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: [DATAD]	~ D[4]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+		5: [DATAF]	~ S[4]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		6: NO ITERM
+		7: [CIN]	  Add0~14	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Add0~16	LIT INDEX 0 FANOUTS 0
+		1: [SUMOUT]	Add0~17	LIT INDEX 0 FANOUTS 2
+		2: [COUT]	Add0~18	LIT INDEX 0 FANOUTS 1
+		3: [SHAREOUT]	Add0~19	LIT INDEX 0 FANOUTS 0
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 0000FF00000000FF
+
+
+- ATOM ------------------------
+	ATOM_NAME: Add1~21 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 10
+	Atom Type: stratixii_lcell_comb (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: [DATAC]	~ S[5]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	~ D[5]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: [CIN]	  Add1~18	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		8: [SHAREIN]	  Add1~19	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Add1~20	LIT INDEX 0 FANOUTS 0
+		1: [SUMOUT]	Add1~21	LIT INDEX 0 FANOUTS 2
+		2: [COUT]	Add1~22	LIT INDEX 0 FANOUTS 1
+		3: [SHAREOUT]	Add1~23	LIT INDEX 0 FANOUTS 1
+
+	PARAMETER LIST:
+		shared_arith                   = on
+		extended_lut                   = off
+		lut_mask                       = 00000F000000F00F
+
+
+- ATOM ------------------------
+	ATOM_NAME: Add0~21 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 11
+	Atom Type: stratixii_lcell_comb (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: [DATAD]	~ D[5]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+		5: [DATAF]	~ S[5]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		6: NO ITERM
+		7: [CIN]	  Add0~18	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Add0~20	LIT INDEX 0 FANOUTS 0
+		1: [SUMOUT]	Add0~21	LIT INDEX 0 FANOUTS 2
+		2: [COUT]	Add0~22	LIT INDEX 0 FANOUTS 1
+		3: [SHAREOUT]	Add0~23	LIT INDEX 0 FANOUTS 0
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 0000FF00000000FF
+
+
+- ATOM ------------------------
+	ATOM_NAME: Add1~25 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 12
+	Atom Type: stratixii_lcell_comb (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: [DATAC]	~ S[6]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	~ D[6]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: [CIN]	  Add1~22	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		8: [SHAREIN]	  Add1~23	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Add1~24	LIT INDEX 0 FANOUTS 0
+		1: [SUMOUT]	Add1~25	LIT INDEX 0 FANOUTS 2
+		2: [COUT]	Add1~26	LIT INDEX 0 FANOUTS 1
+		3: [SHAREOUT]	Add1~27	LIT INDEX 0 FANOUTS 1
+
+	PARAMETER LIST:
+		shared_arith                   = on
+		extended_lut                   = off
+		lut_mask                       = 00000F000000F00F
+
+
+- ATOM ------------------------
+	ATOM_NAME: Add0~25 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 13
+	Atom Type: stratixii_lcell_comb (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: [DATAD]	~ D[6]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+		5: [DATAF]	~ S[6]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		6: NO ITERM
+		7: [CIN]	  Add0~22	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Add0~24	LIT INDEX 0 FANOUTS 0
+		1: [SUMOUT]	Add0~25	LIT INDEX 0 FANOUTS 2
+		2: [COUT]	Add0~26	LIT INDEX 0 FANOUTS 1
+		3: [SHAREOUT]	Add0~27	LIT INDEX 0 FANOUTS 0
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 0000FF00000000FF
+
+
+- ATOM ------------------------
+	ATOM_NAME: Add1~29 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 14
+	Atom Type: stratixii_lcell_comb (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: [DATAC]	~ S[7]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	~ D[7]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: [CIN]	  Add1~26	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		8: [SHAREIN]	  Add1~27	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Add1~28	LIT INDEX 0 FANOUTS 0
+		1: [SUMOUT]	Add1~29	LIT INDEX 0 FANOUTS 2
+		2: [COUT]	Add1~30	LIT INDEX 0 FANOUTS 1
+		3: [SHAREOUT]	Add1~31	LIT INDEX 0 FANOUTS 1
+
+	PARAMETER LIST:
+		shared_arith                   = on
+		extended_lut                   = off
+		lut_mask                       = 00000F000000F00F
+
+
+- ATOM ------------------------
+	ATOM_NAME: Add0~29 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 15
+	Atom Type: stratixii_lcell_comb (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: [DATAD]	~ D[7]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+		5: [DATAF]	~ S[7]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		6: NO ITERM
+		7: [CIN]	  Add0~26	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Add0~28	LIT INDEX 0 FANOUTS 0
+		1: [SUMOUT]	Add0~29	LIT INDEX 0 FANOUTS 2
+		2: [COUT]	Add0~30	LIT INDEX 0 FANOUTS 1
+		3: [SHAREOUT]	Add0~31	LIT INDEX 0 FANOUTS 0
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 0000FF00000000FF
+
+
+- ATOM ------------------------
+	ATOM_NAME: Add1~33 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 16
+	Atom Type: stratixii_lcell_comb (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: [CIN]	  Add1~30	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		8: [SHAREIN]	  Add1~31	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Add1~32	LIT INDEX 0 FANOUTS 0
+		1: [SUMOUT]	Add1~33	LIT INDEX 0 FANOUTS 2
+		2: [COUT]	Add1~34	LIT INDEX 0 FANOUTS 0
+		3: [SHAREOUT]	Add1~35	LIT INDEX 0 FANOUTS 0
+
+	PARAMETER LIST:
+		shared_arith                   = on
+		extended_lut                   = off
+		lut_mask                       = 000000000000FFFF
+
+
+- ATOM ------------------------
+	ATOM_NAME: Add0~33 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 17
+	Atom Type: stratixii_lcell_comb (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: [CIN]	  Add0~30	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Add0~32	LIT INDEX 0 FANOUTS 0
+		1: [SUMOUT]	Add0~33	LIT INDEX 0 FANOUTS 2
+		2: [COUT]	Add0~34	LIT INDEX 0 FANOUTS 0
+		3: [SHAREOUT]	Add0~35	LIT INDEX 0 FANOUTS 0
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 0000FFFF00000000
+
+
+- ATOM ------------------------
+	ATOM_NAME: T~56 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 34
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	~ M	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: [DATAB]	~ s[3]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		2: [DATAC]	~ s[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	~ s[2]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: [DATAE]	~ s[1]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	T~56	LIT INDEX 0 FANOUTS 9
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 0020000000200000
+
+
+- ATOM ------------------------
+	ATOM_NAME: T~57 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 36
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	~ M	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: [DATAB]	~ s[3]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		2: [DATAC]	~ s[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	~ s[2]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: [DATAE]	~ s[1]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	T~57	LIT INDEX 0 FANOUTS 9
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = AA8AAAEAAA8AAAEA
+
+
+- ATOM ------------------------
+	ATOM_NAME: T~58 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 37
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	~ M	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: [DATAB]	~ s[3]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		2: [DATAC]	~ s[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	~ s[2]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: [DATAE]	~ s[1]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	T~58	LIT INDEX 0 FANOUTS 16
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 0100004001000040
+
+
+- ATOM ------------------------
+	ATOM_NAME: T~59 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 38
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	~ s[3]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: [DATAB]	~ s[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		2: [DATAC]	~ s[2]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	~ s[1]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	T~59	LIT INDEX 0 FANOUTS 8
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 0210021002100210
+
+
+- ATOM ------------------------
+	ATOM_NAME: T~60 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 39
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	~ s[3]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: [DATAB]	~ s[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		2: [DATAC]	~ s[2]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	~ s[1]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	T~60	LIT INDEX 0 FANOUTS 8
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 0858085808580858
+
+
+- ATOM ------------------------
+	ATOM_NAME: T~61 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 40
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	~ D[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: [DATAB]	~ S[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		2: [DATAC]	~ T~58	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	~ T~59	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAE]	~ T~60	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: [DATAF]	~ Add0~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	T~61	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 00C030100FCF3F1F
+
+
+- ATOM ------------------------
+	ATOM_NAME: T~62 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 41
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	~ D[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: [DATAB]	~ T~56	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	~ Add1~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	~ T~57	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAE]	~ T~58	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: [DATAF]	~ T~61	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	T~62	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 1111111DDD11DD1D
+
+
+- ATOM ------------------------
+	ATOM_NAME: T~63 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 44
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	~ T~58	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	~ T~59	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	~ T~60	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	~ D[1]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: [DATAE]	~ S[1]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		5: [DATAF]	~ Add0~5	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	T~63	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 2020080A75755D5F
+
+
+- ATOM ------------------------
+	ATOM_NAME: T~64 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 45
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	~ T~56	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	~ T~57	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	~ T~58	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	~ D[1]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: [DATAE]	~ Add1~5	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: [DATAF]	~ T~63	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	T~64	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 0055025788DD8ADF
+
+
+- ATOM ------------------------
+	ATOM_NAME: T~65 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 48
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	~ T~58	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	~ T~59	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	~ T~60	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	~ D[2]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: [DATAE]	~ S[2]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		5: [DATAF]	~ Add0~9	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	T~65	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 2020080A75755D5F
+
+
+- ATOM ------------------------
+	ATOM_NAME: T~66 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 49
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	~ T~56	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	~ T~57	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	~ T~58	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	~ D[2]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: [DATAE]	~ Add1~9	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: [DATAF]	~ T~65	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	T~66	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 0055025788DD8ADF
+
+
+- ATOM ------------------------
+	ATOM_NAME: T~67 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 50
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	~ T~56	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	~ T~57	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	T~67	LIT INDEX 0 FANOUTS 5
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 8888888888888888
+
+
+- ATOM ------------------------
+	ATOM_NAME: T~68 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 53
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	~ T~56	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	~ T~57	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	~ T~58	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	~ D[3]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: [DATAE]	~ Add1~13	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	T~68	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 0055025700550257
+
+
+- ATOM ------------------------
+	ATOM_NAME: T~69 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 54
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	~ T~59	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	~ T~60	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	~ D[3]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	~ S[3]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	T~69	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 4423442344234423
+
+
+- ATOM ------------------------
+	ATOM_NAME: T~70 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 55
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	~ T~58	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	~ T~67	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	~ T~68	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	~ Add0~13	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAE]	~ T~69	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	T~70	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 0F1F2F3F0F1F2F3F
+
+
+- ATOM ------------------------
+	ATOM_NAME: T~71 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 58
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	~ T~56	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	~ T~57	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	~ T~58	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	~ D[4]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: [DATAE]	~ Add1~17	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	T~71	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 0055025700550257
+
+
+- ATOM ------------------------
+	ATOM_NAME: T~72 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 59
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	~ T~59	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	~ T~60	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	~ D[4]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	~ S[4]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	T~72	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 4423442344234423
+
+
+- ATOM ------------------------
+	ATOM_NAME: T~73 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 60
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	~ T~58	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	~ T~67	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	~ T~71	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	~ Add0~17	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAE]	~ T~72	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	T~73	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 0F1F2F3F0F1F2F3F
+
+
+- ATOM ------------------------
+	ATOM_NAME: T~74 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 63
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	~ T~56	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	~ T~57	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	~ T~58	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	~ D[5]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: [DATAE]	~ Add1~21	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	T~74	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 0055025700550257
+
+
+- ATOM ------------------------
+	ATOM_NAME: T~75 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 64
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	~ T~59	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	~ T~60	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	~ D[5]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	~ S[5]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	T~75	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 4423442344234423
+
+
+- ATOM ------------------------
+	ATOM_NAME: T~76 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 65
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	~ T~58	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	~ T~67	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	~ T~74	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	~ Add0~21	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAE]	~ T~75	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	T~76	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 0F1F2F3F0F1F2F3F
+
+
+- ATOM ------------------------
+	ATOM_NAME: T~77 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 68
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	~ T~56	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	~ T~57	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	~ T~58	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	~ D[6]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: [DATAE]	~ Add1~25	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	T~77	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 0055025700550257
+
+
+- ATOM ------------------------
+	ATOM_NAME: T~78 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 69
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	~ T~59	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	~ T~60	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	~ D[6]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	~ S[6]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	T~78	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 4423442344234423
+
+
+- ATOM ------------------------
+	ATOM_NAME: T~79 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 70
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	~ T~58	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	~ T~67	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	~ T~77	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	~ Add0~25	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAE]	~ T~78	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	T~79	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 0F1F2F3F0F1F2F3F
+
+
+- ATOM ------------------------
+	ATOM_NAME: T~80 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 73
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	~ T~56	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	~ T~57	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	~ T~58	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	~ D[7]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: [DATAE]	~ Add1~29	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	T~80	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 0055025700550257
+
+
+- ATOM ------------------------
+	ATOM_NAME: T~81 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 74
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	~ T~59	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	~ T~60	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	~ D[7]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	~ S[7]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	T~81	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 4423442344234423
+
+
+- ATOM ------------------------
+	ATOM_NAME: T~82 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 75
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	~ T~58	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	~ T~67	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	~ T~80	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	~ Add0~29	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAE]	~ T~81	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	T~82	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 0F1F2F3F0F1F2F3F
+
+
+- ATOM ------------------------
+	ATOM_NAME: Equal2~0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 76
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	~ s[3]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: [DATAB]	~ s[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		2: [DATAC]	~ s[2]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	~ s[1]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Equal2~0	LIT INDEX 0 FANOUTS 3
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 0008000800080008
+
+
+- ATOM ------------------------
+	ATOM_NAME: Equal0~0 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 77
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	~ s[3]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: [DATAB]	~ s[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		2: [DATAC]	~ s[2]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Equal0~0	LIT INDEX 0 FANOUTS 5
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 1010101010101010
+
+
+- ATOM ------------------------
+	ATOM_NAME: Zf~5 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 78
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	~ M	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: [DATAB]	~ s[1]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		2: [DATAC]	~ Equal2~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	~ Add1~9	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAE]	~ Equal0~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Zf~5	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 0500010005000100
+
+
+- ATOM ------------------------
+	ATOM_NAME: Zf~6 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 79
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	~ Add1~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	~ Add1~5	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	~ Add1~13	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	~ Add1~25	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAE]	~ Add1~29	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: [DATAF]	~ Zf~5	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Zf~6	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 0000000080000000
+
+
+- ATOM ------------------------
+	ATOM_NAME: Zf~7 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 80
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	~ D[3]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: [DATAB]	~ S[3]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		2: [DATAC]	~ D[7]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	~ S[7]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Zf~7	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 111F111F111F111F
+
+
+- ATOM ------------------------
+	ATOM_NAME: Zf~8 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 81
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	~ D[1]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: [DATAB]	~ S[1]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		2: [DATAC]	~ D[4]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	~ S[4]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: [DATAE]	~ Zf~7	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Zf~8	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = EEE00000EEE00000
+
+
+- ATOM ------------------------
+	ATOM_NAME: Zf~9 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 82
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	~ D[2]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: [DATAB]	~ S[2]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		2: [DATAC]	~ D[6]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	~ S[6]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Zf~9	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 111F111F111F111F
+
+
+- ATOM ------------------------
+	ATOM_NAME: Zf~10 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 83
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	~ D[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: [DATAB]	~ S[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		2: [DATAC]	~ D[5]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	~ S[5]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: [DATAE]	~ Zf~9	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Zf~10	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = EEE00000EEE00000
+
+
+- ATOM ------------------------
+	ATOM_NAME: Zf~11 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 84
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	~ S[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: [DATAB]	~ S[2]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		2: [DATAC]	~ S[5]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	~ S[6]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Zf~11	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 0001000100010001
+
+
+- ATOM ------------------------
+	ATOM_NAME: Cf~6 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 85
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	~ s[3]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: [DATAB]	~ s[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		2: [DATAC]	~ s[2]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	~ s[1]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Cf~6	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 0200020002000200
+
+
+- ATOM ------------------------
+	ATOM_NAME: Zf~12 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 86
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	~ S[1]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: [DATAB]	~ S[3]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		2: [DATAC]	~ S[4]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	~ S[7]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: [DATAE]	~ Zf~11	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: [DATAF]	~ Cf~6	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Zf~12	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 0000000000000001
+
+
+- ATOM ------------------------
+	ATOM_NAME: Zf~13 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 87
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	~ s[1]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: [DATAB]	~ Equal0~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	~ Zf~8	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	~ Zf~10	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAE]	~ Zf~12	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Zf~13	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = FFFE0000FFFE0000
+
+
+- ATOM ------------------------
+	ATOM_NAME: Zf~14 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 88
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	~ M	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: [DATAB]	~ s[1]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		2: [DATAC]	~ Equal2~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	~ Equal0~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAE]	~ Zf~13	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Zf~14	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 5010000050100000
+
+
+- ATOM ------------------------
+	ATOM_NAME: Zf~15 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 89
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	~ Add0~25	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	~ Add0~29	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	~ Add0~33	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	~ Add0~21	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAE]	~ Zf~17	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: [DATAF]	~ Zf~18	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Zf~15	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 0000000000008000
+
+
+- ATOM ------------------------
+	ATOM_NAME: Zf~16 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 90
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	~ Add1~17	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	~ Add1~21	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	~ Add1~33	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	~ Zf~6	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAE]	~ Zf~14	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: [DATAF]	~ Zf~15	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Zf~16	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 0080FFFFFFFFFFFF
+
+
+- ATOM ------------------------
+	ATOM_NAME: Cf~7 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 91
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	~ s[1]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: [DATAB]	~ Equal2~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	~ Add1~33	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		3: [DATAD]	~ Equal0~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAE]	~ Add0~33	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Cf~7	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 030103AB030103AB
+
+
+- ATOM ------------------------
+	ATOM_NAME: Cf~8 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 92
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	~ M	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: [DATAB]	~ s[3]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		2: [DATAC]	~ s[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	~ s[2]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: [DATAE]	~ s[1]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Cf~8	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 0104014001040140
+
+
+- ATOM ------------------------
+	ATOM_NAME: Zf~17 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 93
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	~ Add0~5	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	~ Add0~9	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: [DATAC]	~ M	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	~ s[1]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: [DATAE]	~ Add0~1	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: [DATAF]	~ Equal0~0	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Zf~17	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 0000000008000000
+
+
+- ATOM ------------------------
+	ATOM_NAME: Zf~18 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 94
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	~ Add0~17	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: [DATAB]	~ Add0~13	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Zf~18	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 8888888888888888
+
+
+- ATOM ------------------------
+	ATOM_NAME: Cf$latch -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 95
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: [DATAD]	~ Cf~7	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		4: [DATAE]	~ Cf$latch	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		5: [DATAF]	~ Cf~8	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	Cf$latch	LIT INDEX 0 FANOUTS 2
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		shared_arith                   = off
+		extended_lut                   = off
+		lut_mask                       = 0000FFFF00FF00FF
+
+
+- ATOM ------------------------
+	ATOM_NAME: T[0] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 98
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: [DATAIN]	  T~62	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	T[0]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = output
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	N/A
+		PAD TO CORE 1:	N/A
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: T[1] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 99
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: [DATAIN]	  T~64	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	T[1]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = output
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	N/A
+		PAD TO CORE 1:	N/A
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: T[2] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 100
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: [DATAIN]	  T~66	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	T[2]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = output
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	N/A
+		PAD TO CORE 1:	N/A
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: T[3] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 101
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: [DATAIN]	  T~70	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	T[3]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = output
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	N/A
+		PAD TO CORE 1:	N/A
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: T[4] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 102
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: [DATAIN]	  T~73	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	T[4]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = output
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	N/A
+		PAD TO CORE 1:	N/A
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: T[5] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 103
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: [DATAIN]	  T~76	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	T[5]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = output
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	N/A
+		PAD TO CORE 1:	N/A
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: T[6] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 104
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: [DATAIN]	  T~79	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	T[6]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = output
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	N/A
+		PAD TO CORE 1:	N/A
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: T[7] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 105
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: [DATAIN]	  T~82	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	T[7]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = output
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	N/A
+		PAD TO CORE 1:	N/A
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: Cf -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 106
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: [DATAIN]	  Cf$latch	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	Cf	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = output
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	N/A
+		PAD TO CORE 1:	N/A
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: Zf -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 107
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: [DATAIN]	  Zf~16	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	Zf	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = output
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	N/A
+		PAD TO CORE 1:	N/A
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: D[0] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 108
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	D[0]	LIT INDEX 0 FANOUTS 5
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	D[0]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: M -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 109
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	M	LIT INDEX 0 FANOUTS 7
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	M	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: s[3] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 110
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	s[3]	LIT INDEX 0 FANOUTS 9
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	s[3]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: s[0] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 111
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	s[0]	LIT INDEX 0 FANOUTS 9
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	s[0]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: s[2] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 112
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	s[2]	LIT INDEX 0 FANOUTS 9
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	s[2]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: s[1] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 113
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	s[1]	LIT INDEX 0 FANOUTS 13
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	s[1]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: S[0] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 114
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	S[0]	LIT INDEX 0 FANOUTS 5
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	S[0]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: D[1] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 115
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	D[1]	LIT INDEX 0 FANOUTS 5
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	D[1]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: S[1] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 116
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	S[1]	LIT INDEX 0 FANOUTS 5
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	S[1]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: D[2] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 117
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	D[2]	LIT INDEX 0 FANOUTS 5
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	D[2]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: S[2] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 118
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	S[2]	LIT INDEX 0 FANOUTS 5
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	S[2]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: D[3] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 119
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	D[3]	LIT INDEX 0 FANOUTS 5
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	D[3]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: S[3] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 120
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	S[3]	LIT INDEX 0 FANOUTS 5
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	S[3]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: D[4] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 121
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	D[4]	LIT INDEX 0 FANOUTS 5
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	D[4]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: S[4] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 122
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	S[4]	LIT INDEX 0 FANOUTS 5
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	S[4]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: D[5] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 123
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	D[5]	LIT INDEX 0 FANOUTS 5
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	D[5]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: S[5] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 124
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	S[5]	LIT INDEX 0 FANOUTS 5
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	S[5]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: D[6] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 125
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	D[6]	LIT INDEX 0 FANOUTS 5
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	D[6]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: S[6] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 126
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	S[6]	LIT INDEX 0 FANOUTS 5
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	S[6]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: D[7] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 127
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	D[7]	LIT INDEX 0 FANOUTS 5
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	D[7]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: S[7] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 128
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	S[7]	LIT INDEX 0 FANOUTS 5
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	S[7]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: ~QUARTUS_CREATED_GND~I -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 129
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	~QUARTUS_CREATED_GND~I	LIT INDEX 0 FANOUTS 0
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		(Skipping parameters for lcell or lcell comb with no fanout)
+
+
+- ATOM ------------------------
+	ATOM_NAME: ~DATA0~ -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 130
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	~DATA0~	LIT INDEX 0 FANOUTS 0
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	~DATA0~	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+

@@ -1,0 +1,45 @@
+module Reg(clk,we,RSA,RWDA,i,S,D);
+
+input clk,we;
+input [1:0]RSA,RWDA;
+input [7:0]i;
+output [7:0]S,D;
+
+reg [7:0]a,b,c,S,D;
+
+initial 
+begin 
+	a = 8'h01;
+	b = 8'h02;
+	c = 8'h03;
+end
+
+always@(RSA,RWDA)
+begin 
+	if(RSA==2'b00)  S = a;
+	else if(RSA==2'b01) S = b;
+	else S = c;
+	
+	if(RWDA==2'b00) D = a;
+	else if(RWDA==2'b01) D = b;
+	else D = c;
+end
+
+always@(negedge clk)
+begin
+	if(we==1'b0)
+	begin
+		if(RWDA==2'b00) a <= i;
+		else if(RWDA==2'b01) b <= i;
+		else c <= i;
+	end
+end
+endmodule 
+	
+	
+	
+	
+	
+	
+	
+	
